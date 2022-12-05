@@ -70,6 +70,7 @@ body {
     align-items: center;
     list-style: none;
     list-style-type: none;
+    padding: 0 20px;
 }
 
 .menu a {
@@ -83,6 +84,11 @@ body {
 .menu li {
     border-bottom: 1px solid #ebebeb;
     text-align: center;
+    width: 100%;
+}
+
+.menu a:hover{
+   color: black;
 }
 
 
@@ -90,12 +96,85 @@ body {
 
 /* OBSAH */
 
+.uvod p {
+    padding: 0 20px;
+}
+
+.popisek {
+    color: rgb(195, 195, 195);
+    text-align: center;
+    font-size: 10px;
+}
+
+popisek a {
+    color: rgb(195, 195, 195)
+}
+
+.preco,
+.videt {
+    padding: 0 20px;
+}
+
+.ciarkamodra {
+    content: "";
+    display: block;
+    background-color: #4f9ee8;
+    width: 100px;
+    height: 4px;
+    margin-top: 5px;
+    
+}
+
+h2 {
+    margin-bottom: 10px;
+    mar
+    padding: 0 20px;
+}
+
+.obrazokisland img{
+    max-width: 100%;
+
+}
+
+
+
 
 
 
 /* FOTOGALERIE */
 
+.galerie {
+    display: flex;
+    flex-direction: column;
+    margin: 25px 0;
 
+}
+
+.galerie img{
+    display: block;
+    width: 100%;
+
+}
+
+.galerie .popisek-copy {
+    font-weight: normal;
+}
+
+.galerie .popisek {
+    font-weight: bold;
+}
 
 
 /* PATICKA */
+
+.paticka {
+    background: rgb(224, 224, 224);
+    background: linear-gradient(180deg, rgba(224, 224, 224, 1) 11%, rgba(252, 252, 255, 1) 64%);
+}
+
+.paticka p,
+.paticka a {
+    color: grey;
+    font-size: 11px;
+    margin-top: 25px;
+}
