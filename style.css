@@ -107,7 +107,7 @@ body {
     font-size: 10px;
 }
 
-popisek a {
+.popisek a {
     color: rgb(195, 195, 195)
 }
 
@@ -163,6 +163,13 @@ h2 {
 .galerie .popisek {
     font-weight: bold;
 }
+
+.popisek .a{
+    color: white;
+    text-decoration: none;
+}
+
+
 
 
 /* PATICKA */
@@ -224,17 +231,30 @@ h2 {
 
     }
 
-    .galerie .foto {
+    .foto {
         width: 50%;
+        transition: 0.3s;
     }
 
-    .foto .popisek {
+    .popisek {
         color: white;
         position: absolute;
-        background-color: rgba(21, 21, 21, 0.7);
+        background-color: rgba(21, 21, 21, 0.5);
         width: 100%;
-        transition: 0.4s;
-        
-        
+        transition: 0.3s;
+        margin: 0;
+    }
+
+    .foto:hover .popisek {
+        transform: translateY(-100%);
+    }
+
+    .foto {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .popisek a {
+        color: white;
     }
 }
