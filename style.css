@@ -79,6 +79,7 @@ body {
     text-transform: uppercase;
     border-bottom: 20px;
     font-family: 'Raleway', serif;
+    font-size: 13px;
 }
 
 .menu li {
@@ -127,7 +128,6 @@ popisek a {
 
 h2 {
     margin-bottom: 10px;
-    mar
     padding: 0 20px;
 }
 
@@ -177,4 +177,64 @@ h2 {
     color: grey;
     font-size: 11px;
     margin-top: 25px;
+}
+
+
+
+/* TABLETOVE ZOBRAZENIE */
+@media only screen and (min-width: 500px) {
+
+    /* MENU */
+    .menu {
+        flex-direction: row;
+        max-width: 100%;
+        align-items: stretch;
+        
+    }
+
+    .menu li {
+        border-right: 1px solid #ebebeb;
+        border-top: 1px solid #ebebeb;
+
+    }
+
+
+    /* OBSAH */
+    .island {
+        padding: 0 5px;
+    }
+
+    .obrazokisland {
+        position: relative;
+    }
+
+    .obrazokisland .popisek {
+        color: white;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding-right: 10px;
+
+    }
+
+    /* GALERIA */
+    .galerie {
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+
+    .galerie .foto {
+        width: 50%;
+    }
+
+    .foto .popisek {
+        color: white;
+        position: absolute;
+        background-color: rgba(21, 21, 21, 0.7);
+        width: 100%;
+        transition: 0.4s;
+        
+        
+    }
 }
